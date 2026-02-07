@@ -528,3 +528,78 @@ body {
 #contact .social-icons li a i {
     color: white;
 }
+
+/* --- MOBILE RESPONSIVE CODE --- */
+
+@media screen and (max-width: 600px) {
+    /* 1. Body font size chota karne ke liye */
+    body {
+        font-size: 20px;
+    }
+
+    /* 2. Header aur Name adjust karne ke liye */
+    #my-name {
+        font-size: 2rem;
+    }
+    
+    #name-social-container {
+        margin-top: 10vh;
+    }
+
+    /* 3. About Section: */
+    #about-para {
+        width: 90%;
+        line-height: 22px;
+        font-size: 0.9rem;
+    }
+
+    /* 4. Timeline (Experience/Education)*/
+    .timeline {
+        width: 95%;
+        margin-left: 10px; 
+    }
+
+    .timeline-box {
+        width: 85% !important;
+        left: 5% !important;
+        margin-left: 30px;
+    }
+
+    .timeline-box:nth-child(2n) {
+        left: 5% !important; 
+    }
+
+    .timeline-devider {
+        left: 20px; 
+    }
+
+    .timeline-box::after {
+        left: -28px !important;
+    }
+
+    /* 5. Portfolio: */
+    #portfolio-image {
+        width: 95%;
+    }
+
+    #portfolio-image span {
+        width: 100%; 
+        margin: 10px 0;
+    }
+
+    /* 6. Contact Section: */
+    #contact-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #contact-form-container, 
+    #contact-info-container {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .titles {
+        text-align: left; 
+    }
+}
